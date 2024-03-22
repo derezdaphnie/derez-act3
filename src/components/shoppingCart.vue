@@ -4,7 +4,7 @@
       <div v-for="(item, index) in cart" :key="index" class="cart-item">
         <div class="item-details">
           <p class="item-name">{{ item.name }}</p>
-          <p class="item-price">Php {{ item.price }}</p>
+          <p class="item-price">₱ {{ item.price }}</p> <!-- Replaced "Php" with peso sign "₱" -->
           <p class="item-quantity">Quantity: {{ item.quantity }}</p>
         </div>
         <div class="quantity-controls">
@@ -14,7 +14,7 @@
       </div>
   
       <!-- Total -->
-      <p class="total">Total: Php {{ total }}</p>
+      <p class="total">Total: ₱ {{ total }}</p> <!-- Replaced "Php" with peso sign "₱" -->
   
       <!-- Dialog for updating quantity -->
       <div v-if="dialogVisible" class="dialog">
